@@ -71,7 +71,7 @@ class Solution {
             c = new BigInteger(n.bitLength(), rnd).mod(n);
             if (c.equals(BigInteger.ZERO)) c = BigInteger.ONE;
             d = BigInteger.ONE;
-
+ 
             while (d.equals(BigInteger.ONE)) {
                 x = x.multiply(x).mod(n).add(c).mod(n);
                 y = y.multiply(y).mod(n).add(c).mod(n);
